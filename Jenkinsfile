@@ -11,7 +11,10 @@ pipeline {
              agent any
              steps {
                 script {
-                  sh 'docker build -t walfare/$IMAGE_NAME:$IMAGE_TAG .'
+                  sh '''
+                     cd ~/centos/projet/student-list/simple_api
+                     docker build -t walfare/$IMAGE_NAME:$IMAGE_TAG .
+                   '''
                 }
              }
         }
