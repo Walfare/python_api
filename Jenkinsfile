@@ -12,7 +12,7 @@ pipeline {
              steps {
                 script {
                   sh '''
-                     cd ~/centos/projet/student-list/simple_api
+                     cd /home/centos/projet/student-list/simple_api
                      docker build -t walfare/$IMAGE_NAME:$IMAGE_TAG .
                    '''
                 }
